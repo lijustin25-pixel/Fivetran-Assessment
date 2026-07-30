@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --sidebar-bg: #f9f9f9;
+  --sidebar-hover: #ececec;
+  --sidebar-active: #e8e8e8;
+  --sidebar-border: rgba(0, 0, 0, 0.05);
+  --sidebar-text: #0d0d0d;
+  --sidebar-muted: #8f8f8f;
+  --main-bg: #ffffff;
+  --text: #0d0d0d;
+  --text-muted: #8f8f8f;
+  --user-bubble: #f4f4f4;
+  --composer-bg: #ffffff;
+  --composer-border: #e5e5e5;
+  --composer-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --send-bg: #0d0d0d;
+  --send-fg: #ffffff;
+  --send-disabled: #d9d9d9;
+  --code-bg: #f4f4f4;
+  --avatar-bg: #0d0d0d;
+  --avatar-fg: #ffffff;
+  --error-bg: #fef2f2;
+  --error-text: #b42318;
+  --error-border: #fecdca;
+  --overlay: rgba(0, 0, 0, 0.35);
+  --sans: 'IBM Plex Sans', ui-sans-serif, -apple-system, system-ui, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--main-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --sidebar-bg: #171717;
+    --sidebar-hover: #212121;
+    --sidebar-active: #212121;
+    --sidebar-border: rgba(255, 255, 255, 0.08);
+    --sidebar-text: #ececec;
+    --sidebar-muted: #8f8f8f;
+    --main-bg: #212121;
+    --text: #ececec;
+    --text-muted: #8f8f8f;
+    --user-bubble: #2f2f2f;
+    --composer-bg: #2f2f2f;
+    --composer-border: transparent;
+    --composer-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+    --send-bg: #ffffff;
+    --send-fg: #0d0d0d;
+    --send-disabled: #565656;
+    --code-bg: #0d0d0d;
+    --avatar-bg: #ffffff;
+    --avatar-fg: #0d0d0d;
+    --error-bg: #3b1510;
+    --error-text: #ffb4a9;
+    --error-border: #912018;
+    --overlay: rgba(0, 0, 0, 0.55);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--main-bg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
